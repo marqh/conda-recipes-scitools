@@ -1,5 +1,5 @@
---- setup.orig.py	Wed Dec 10 18:01:57 2014
-+++ setup.py	Wed Dec 10 18:02:23 2014
+--- setup.orig.py	2015-04-21 11:06:27.490536259 +0000
++++ setup.py	2015-04-21 11:07:28.287654493 +0000
 @@ -150,7 +150,7 @@
      ext_modules = []
      libraries = []
@@ -8,7 +8,7 @@
 +    libraries = ['geos_c']
  else:
      libraries = ['geos_c']
-
+ 
 @@ -181,7 +181,7 @@
          "shapely.speedups._speedups",
          ["shapely/speedups/_speedups.c"],
@@ -16,15 +16,5 @@
 -        include_dirs=[get_config_var('INCLUDEDIR')],),
 +        include_dirs=[],),
  ]
-
- try:
-@@ -198,8 +198,7 @@
-     ext_modules.append(DistutilsExtension("shapely.vectorized._vectorized",
-                                  sources=["shapely/vectorized/_vectorized.pyx"],
-                                  libraries=libraries + [np.get_include()],
--                                 include_dirs=[get_config_var('INCLUDEDIR'),
--                                               np.get_include()],
-+                                 include_dirs=[np.get_include()],
-                                  ))
- except ImportError:
-     print("Numpy or Cython not available, shapely.vectorized submodule not "
+ 
+ cmd_classes = setup_args.setdefault('cmdclass', {})
