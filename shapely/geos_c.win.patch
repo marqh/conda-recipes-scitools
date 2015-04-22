@@ -1,8 +1,11 @@
 --- setup.orig.py	2015-04-21 14:46:47.053028878 +0000
-+++ setup.py	2015-04-21 14:47:40.360250734 +0000
-@@ -142,7 +142,7 @@
++++ setup.py	2015-04-22 08:40:53.543568706 +0000
+@@ -141,8 +141,10 @@
+ 
  # Build cython extensions, which require development parameters
  include_dirs = [get_config_var('INCLUDEDIR')]
++if sys.platform == 'win32':
++    include_dirs = []
  library_dirs = []
 -libraries = []
 +libraries = ['geos_c']
