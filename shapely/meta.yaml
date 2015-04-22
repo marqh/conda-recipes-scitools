@@ -1,10 +1,10 @@
 package:
   name: shapely
-  version: 1.5.8dev
+  version: 1.5.7
 
 source:
   git_url: https://github.com/Toblerity/Shapely.git
-  git_tag: 2212deb2105d380345c9b558f8f4c3d3be903496
+  git_tag: 1.5.7
   patches:
     - geos_c.win.patch      # [win]
 

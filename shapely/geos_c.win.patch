@@ -1,14 +1,20 @@
---- setup.orig.py	2015-04-21 14:46:47.053028878 +0000
-+++ setup.py	2015-04-22 08:40:53.543568706 +0000
-@@ -141,8 +141,10 @@
+--- setup.orig.py	2015-04-21 11:06:27.490536259 +0000
++++ setup.py	2015-04-21 11:07:28.287654493 +0000
+@@ -150,7 +150,7 @@
+     ext_modules = []
+     libraries = []
+ elif sys.platform == 'win32':
+-    libraries = ['geos']
++    libraries = ['geos_c']
+ else:
+     libraries = ['geos_c']
  
- # Build cython extensions, which require development parameters
- include_dirs = [get_config_var('INCLUDEDIR')]
-+if sys.platform == 'win32':
-+    include_dirs = []
- library_dirs = []
--libraries = []
-+libraries = ['geos_c']
- extra_link_args = []
+@@ -181,7 +181,7 @@
+         "shapely.speedups._speedups",
+         ["shapely/speedups/_speedups.c"],
+         libraries=libraries,
+-        include_dirs=[get_config_var('INCLUDEDIR')],),
++        include_dirs=[],),
+ ]
  
- 
+ cmd_classes = setup_args.setdefault('cmdclass', {})
