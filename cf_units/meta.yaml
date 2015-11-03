@@ -1,17 +1,17 @@
 package:
     name: cf_units
-    version: "0.1.0"
+    version: "0.2.0"
 
 source:
     git_url: https://github.com/SciTools/cf_units.git
-    git_tag: v0.1.0
+    git_tag: v0.2.0
 
 build:
     number: 1
 
 requirements:
     build:
-        - python <3  # See https://github.com/SciTools/cf_units/pull/22 for progress.
+        - python
     run:
         - python
         - udunits2
