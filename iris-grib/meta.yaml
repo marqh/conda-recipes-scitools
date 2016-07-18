@@ -7,8 +7,8 @@ source:
     url: https://github.com/SciTools/iris-grib/archive/master.zip
 
 build:
-    number: 0
     skip: True  # [win]
+    number: 0
 
 requirements:
     build:
@@ -26,7 +26,7 @@ build:
 
 test:
     imports:
-        - iris_grib
+        - iris_grib # [not win]
 
 about:
     home: http://scitools.org.uk/iris-grib
