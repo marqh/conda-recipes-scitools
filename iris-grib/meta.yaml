@@ -3,8 +3,8 @@ package:
     version: "0.9.0"
 
 source:
-    fn: master.zip
-    url: https://github.com/SciTools/iris-grib/archive/master.zip
+    git_url: https://github.com/SciTools/iris-grib.git
+    git_tag: v0.9.0
 
 build:
     skip: True  # [win]
