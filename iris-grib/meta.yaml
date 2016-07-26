@@ -8,7 +8,7 @@ source:
 
 build:
     skip: True  # [win or py3k]
-    number: 1
+    number: 2
     script:
         - python setup.py install --single-version-externally-managed --record record.txt
 
@@ -21,9 +21,9 @@ requirements:
         - python
         - ecmwf_grib
 
-test:
-    imports:
-        - iris_grib
+# test:
+#     imports:
+#         - iris_grib
 
 about:
     home: http://scitools.org.uk/iris-grib
