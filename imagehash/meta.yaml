@@ -1,0 +1,25 @@
+package:
+  name: imagehash
+  version: "3.0"
+
+source:
+  fn: ImageHash-3.0.tar.gz
+  url: https://pypi.python.org/packages/c8/d0/47d1ce7350ece1ff759c5d399392172435391da1ab1008a77c533f59e7e0/ImageHash-3.0.tar.gz
+  md5: e509d748cb6f0b27a056ef903de01b0e
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - scipy
+    - pillow
+  run:
+    - python
+    - scipy
+    - pillow
+
+test:
+  imports:
+    - imagehash
