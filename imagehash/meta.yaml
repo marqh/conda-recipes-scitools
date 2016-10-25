@@ -15,10 +15,12 @@ requirements:
     - python
     - scipy
     - pillow
+    - pywavelets
   run:
     - python
     - scipy
     - pillow
+    - pywavelets
 
 test:
   imports:
