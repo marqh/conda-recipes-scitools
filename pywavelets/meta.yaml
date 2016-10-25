@@ -25,8 +25,6 @@ requirements:
 test:
     requires:
         - nose
-    commands:
-        - conda inspect linkages -n _test pywavelets  # [linux]
 
 about:
     home: https://github.com/PyWavelets/pywt
