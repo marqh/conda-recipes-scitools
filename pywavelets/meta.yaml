@@ -31,9 +31,3 @@ about:
     home: https://github.com/PyWavelets/pywt
     license: MIT
     summary: Discrete Wavelet Transforms in Python
-
-extra:
-    recipe-maintainers:
-        - grlee77
-        - jakirkham
-        - ocefpaf
