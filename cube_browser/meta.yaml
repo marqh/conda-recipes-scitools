@@ -21,6 +21,8 @@ requirements:
         - iris
         - matplotlib
         - iris_sample_data
+        - six
+        - notebook
 
 test:
     imports:
