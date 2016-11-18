@@ -13,10 +13,10 @@ build:
 
 requirements:
     build:
-        - python
+        - python <3.5
         - setuptools
     run:
-        - python
+        - python <3.5
         - ipywidgets
         - iris
         - matplotlib
