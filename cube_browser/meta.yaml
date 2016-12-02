@@ -27,6 +27,6 @@ test:
         - cube_browser
 
 about:
-    home: http://scitools.org.uk/cube_browser
+    home: http://scitools.github.io/cube_browser
     license: BSD 3-clause
     summary: Working with Jupyter Notebooks to interactively visualise Iris cubes.
