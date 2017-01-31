@@ -1,4 +1,4 @@
-{% set version = "1.11.0" %}
+{% set version = "1.13.0" %}
 
 package:
     name: iris
@@ -9,7 +9,7 @@ source:
     git_tag: v{{ version }}
 
 build:
-    number: 2
+    number: 1
     skip: True  # [py35]
 
 requirements:
