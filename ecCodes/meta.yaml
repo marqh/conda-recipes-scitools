@@ -1,0 +1,32 @@
+package:
+    name: ec_codes
+    version: "0.11.0"
+
+source:
+    fn: eccodes-2.1.0-Source.tar.gz?api=v2
+    url: https://software.ecmwf.int/wiki/download/attachments/45757960/eccodes-2.1.0-Source.tar.gz?api=v2
+    sha1: bd1745ffab470c872bde311ccb7267cd746fbfce
+
+build:
+    number: 1
+    detect_binary_files_with_prefix: true
+
+requirements:
+    build:
+        - python
+        - numpy x.x
+        - jasper
+        - gfortran
+    run:
+        - python
+        - numpy x.x
+        - jasper
+
+test:
+    imports:
+        - gribapi
+
+about:
+    home: https://software.ecmwf.int/wiki/display/ECC/ecCodes+Home
+    license: Apache License, Version 2.0
+    summary: The ECMWF API for encoding and decoding WMO FM-92 GRIB and BUFR messages.
