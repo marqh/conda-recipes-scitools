@@ -1,10 +1,10 @@
 package:
     name: nc_time_axis
-    version: "1.0.0"
+    version: "1.0.2"
 
 source:
     git_url: https://github.com/SciTools/nc-time-axis.git
-    git_tag: v1.0.0
+    git_tag: v1.0.2
 
 build:
     number: 0
